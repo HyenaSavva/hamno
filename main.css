@@ -1,0 +1,29 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-width: 640px;
+    min-height: 100vh;
+    margin: 0px;
+    font-family: "Verdana", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    background-color: #eae9f2;
+    
+}
+
+.page header{
+    margin-bottom: 15px;
+    color: #333;
+    margin-left: 3%;
+
+}
+
+.page header .container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 290px 212px;
+
+}
