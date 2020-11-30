@@ -1,8 +1,6 @@
 .page {
     display: flex;
     flex-direction: column;
-    min-width: 640px;
-    min-height: 100vh;
     margin: 0px;
     font-family: "Verdana", "Tahoma", sans-serif;
     font-size: 14px;
@@ -11,20 +9,36 @@
     background-color: #eae9f2;
     
 }
+.header img {
+    margin-top: 10px;
+    width: 109px;
+}
 
-.page header{
+.header{
+    display: grid;
+    padding-left: 18%;
+    padding-right: 18%;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:#ffffff;
+    height: 54px;
+    border-bottom: #dbdbdb solid 1px;
+}
+
+.header .search {
+    text-align: center;
     
-    margin-bottom: 15px;
-    color: #333;
-
+}
+.header .search img {
+    height: 10px;
+    width: 10px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+}
+input{
+    border: 0px solid black;
 }
 
-.page header .container{
-
-border-bottom: solid 1px;
-background-color: #FFFFFF;
-
-}
-.page header h1{
-    margin-left: 3%;
+.header .button {
+    text-align: center;
 }
