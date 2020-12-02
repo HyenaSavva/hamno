@@ -1,4 +1,5 @@
 .page {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -6,7 +7,7 @@
     font-size: 14px;
     line-height: 18px;
     color: #333;
-    background-color: #eae9f2;
+    background-color:#FAFAFA ;
     
 }
 .header img {
@@ -14,76 +15,93 @@
     width: 109px;
 }
 .header {
-    display: grid;
-    padding-left: 18%;
-    padding-right: 18%;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color:#ffffff;
+    position: fixed;
+    display: flex;
     height: 53px;
+    width: 100%;
+    background-color:#ffffff;
     border-bottom: #dbdbdb solid 1px;
+    justify-content: center;
+
 }
-/* .header .search img {
-    height: 10px;
-    width: 10px;
-    position: relative;
-} */
+.headergrid {
+    display: grid;
+    padding-left: 18.2%;
+    padding-right: 18.2%;
+    width: 975px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .search {
     display: flex;
     justify-self: center;
-    margin-top: 10px;
-    /* 
-    background-color:#FAFAFA ;
-    border-radius: 4px;
-     */
+    margin-top: 13px;
 }
 .search input {
 
-    font: 14px sans-serif ;
-    width: 215px;
-    height: 28px;
-    padding: 0px;
+    font: 14px ;
+    width: 213px;
+    height: 26px;
     border:  #dbdbdb solid 1px;
-    border-radius: 4px;
+    padding: 0px 0px;
+    border-radius: 2px;
     outline: none;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: 9px 9px;
     background-color:#FAFAFA ;
     background-image: url('src/magnifire.png');
-/*  padding-top: 2px;
-    border: #dbdbdb solid 1px ;
-     */
+    background-position: center left 78px;
+
+
 }
 input[type=text]:focus {
     
     border: #dbdbdb solid 1px ;
     border-radius: 4px;
 }
-.button i {
+.button {
     display: flex;
-    align-self: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.button i{
     font-size: 22px;
-    font-weight: 22px;
-    font-display: flex;
+    padding-left: 25px;
 }
 .mainblock {
     display: flex;
     flex-direction: row;
-    background-color:#ffffff;
-    border:#dbdbdb solid 0px;
-    margin-left: 18%;
+    margin-left: 18.4%;
     height: 1600px;
     width: 64%;
-
 }
 .infobar {
     position: fixed;
-    background-color:#d8d8d8;
-    border:#dbdbdb solid 0px;
+    right: 250px;
+    top: 84px;
     height: 600px;
     width: 330px;
-    right: 18%
+    background-color: #ececec;
+    
 }
-.post {
-    width: 65%;
-    border:#dbdbdb solid 2px;
+.postblock {
+    width: 614px;
+}
+.storyblock{
+    background-color:#ffffff;
+    width: 613px;
+    height: 116px;
+    margin-top: 84px;
+    border:#dbdbdb solid 1px;
+    border-radius: 3px;
+}
+.posterblock{
+    background-color:#ffffff;
+    margin-top: 24px;
+    width: 613px;
+    height: 800px;
+    max-height: 1080px;
+    border:#dbdbdb solid 1px;
+    border-radius: 3px;
 }
 
