@@ -13,8 +13,7 @@
     margin-top: 10px;
     width: 109px;
 }
-
-.header{
+.header {
     display: grid;
     padding-left: 18%;
     padding-right: 18%;
@@ -23,33 +22,68 @@
     height: 53px;
     border-bottom: #dbdbdb solid 1px;
 }
-
-.header .search img {
+/* .header .search img {
     height: 10px;
     width: 10px;
     position: relative;
-}
-
-.header .search {
+} */
+.search {
     display: flex;
-    justify-content: center;
     justify-self: center;
-    border:  #dbdbdb solid 1px;
+    margin-top: 10px;
+    /* 
     background-color:#FAFAFA ;
     border-radius: 4px;
+     */
+}
+.search input {
+
+    font: 14px sans-serif ;
     width: 215px;
     height: 28px;
-    margin-top: 10px;
-}
-
-.search input{
-
-    padding-top: 2px;
+    padding: 0px;
+    border:  #dbdbdb solid 1px;
+    border-radius: 4px;
+    outline: none;
     text-align: center;
     background-color:#FAFAFA ;
-    border: 1px;
+    background-image: url('src/magnifire.png');
+/*  padding-top: 2px;
+    border: #dbdbdb solid 1px ;
+     */
+}
+input[type=text]:focus {
+    
+    border: #dbdbdb solid 1px ;
+    border-radius: 4px;
+}
+.button i {
+    display: flex;
+    align-self: center;
+    font-size: 22px;
+    font-weight: 22px;
+    font-display: flex;
+}
+.mainblock {
+    display: flex;
+    flex-direction: row;
+    background-color:#ffffff;
+    border:#dbdbdb solid 0px;
+    margin-left: 18%;
+    height: 1600px;
+    width: 64%;
+
+}
+.infobar {
+    position: fixed;
+    background-color:#d8d8d8;
+    border:#dbdbdb solid 0px;
+    height: 600px;
+    width: 330px;
+    right: 18%
+}
+.post {
+    width: 65%;
+    border:#dbdbdb solid 2px;
 }
 
-.header .button {
-    text-align: center;
-}
