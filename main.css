@@ -1,4 +1,4 @@
-.page {
+body {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -7,67 +7,76 @@
     font-size: 14px;
     line-height: 18px;
     color: #333;
-    background-color:#FAFAFA ;
-    
+    background-color: #FAFAFA;
+
 }
-.header img {
+
+header img {
     margin-top: 10px;
     width: 109px;
 }
-.header {
+
+header {
     position: fixed;
     display: flex;
     height: 53px;
     width: 100%;
-    background-color:#ffffff;
+    background-color: #ffffff;
     border-bottom: #dbdbdb solid 1px;
     justify-content: center;
 
 }
-.headergrid {
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 22px;
+}
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: right;
+}
+
+.snake-case {
     display: grid;
     padding-left: 18.2%;
     padding-right: 18.2%;
     width: 975px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .search {
     display: flex;
     justify-self: center;
     margin-top: 13px;
 }
+
 .search input {
 
-    font: 14px ;
-    width: 213px;
+    font: 14px;
+    width: 187px;
     height: 26px;
-    border:  #dbdbdb solid 1px;
-    padding: 0px 0px;
+    border: #dbdbdb solid 1px;
     border-radius: 2px;
+    padding: 0px 13px;
     outline: none;
     text-align: center;
     background-repeat: no-repeat;
-    background-size: 9px 9px;
-    background-color:#FAFAFA ;
+    background-size: 9px;
+    background-color: #FAFAFA;
     background-image: url('src/magnifire.png');
     background-position: center left 78px;
-
-
 }
+
 input[type=text]:focus {
-    
-    border: #dbdbdb solid 1px ;
-    border-radius: 4px;
+    text-align: left;
+    background-position: center left 3px;
+    border: #dbdbdb solid 1px;
 }
-.button {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-.button i{
-    font-size: 22px;
-    padding-left: 25px;
-}
+
 .mainblock {
     display: flex;
     flex-direction: row;
@@ -75,6 +84,7 @@ input[type=text]:focus {
     height: 1600px;
     width: 64%;
 }
+
 .infobar {
     position: fixed;
     right: 250px;
@@ -82,26 +92,28 @@ input[type=text]:focus {
     height: 600px;
     width: 330px;
     background-color: #ececec;
-    
+
 }
+
 .postblock {
     width: 614px;
 }
-.storyblock{
-    background-color:#ffffff;
+
+.storyblock {
+    background-color: #ffffff;
     width: 613px;
     height: 116px;
     margin-top: 84px;
-    border:#dbdbdb solid 1px;
+    border: #dbdbdb solid 1px;
     border-radius: 3px;
 }
-.posterblock{
-    background-color:#ffffff;
+
+.posterblock {
+    background-color: #ffffff;
     margin-top: 24px;
     width: 613px;
     height: 800px;
     max-height: 1080px;
-    border:#dbdbdb solid 1px;
+    border: #dbdbdb solid 1px;
     border-radius: 3px;
 }
-
