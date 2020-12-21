@@ -8,7 +8,6 @@ body {
     line-height: 18px;
     color: #333;
     background-color: #FAFAFA;
-
 }
 
 header img {
@@ -24,22 +23,25 @@ header {
     background-color: #ffffff;
     border-bottom: #dbdbdb solid 1px;
     justify-content: center;
-
 }
+
 a {
     color: #000;
     text-decoration: none;
 }
+
 .icons-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-self: right;
 }
+
 .icons-container a {
     font-size: 22px;
     padding-left: 22px;
 }
+
 .snake-case {
     display: grid;
     padding-left: 18.2%;
@@ -55,7 +57,6 @@ a {
 }
 
 .search input {
-
     font: 14px;
     width: 187px;
     height: 26px;
@@ -92,7 +93,6 @@ input[type=text]:focus {
     height: 600px;
     width: 330px;
     background-color: #ececec;
-
 }
 
 .postblock {

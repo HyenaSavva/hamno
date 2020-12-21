@@ -1,21 +1,38 @@
-// class Main {
-
-//     protected search: HTMLElement = document.querySelector(".search input");
-//     constructor() {
-//         this.search.addEventListener("click", () => {
-//             console.log("click");
-            
-//             this.changePosition("left", "center left");
-//         })
-//         this.search.addEventListener("blur", () => {
-//             this.changePosition("center", "center left 78px");
-//         })
-//     }
-//     private changePosition(align: string, backgroundaling: string): void {
-//         this.search.style.textAlign = align;
-//         this.search.style.backgroundPosition = backgroundaling;
-//     }
-// }
-// document.addEventListener("DOMContentLoaded", () => {
-//     new Main;
-// })
+document.addEventListener("DOMContentLoaded", () => {
+    const input: HTMLElement = document.querySelector("#textLabel");
+    input.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+            console.log(input.value);
+            input.value = "";
+        }
+    })
+})
+$(function () {
+    const availableTags: string[] = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+    ];
+    $("#textLabel").autocomplete({
+        source: availableTags
+    });
+});
