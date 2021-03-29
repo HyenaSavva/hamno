@@ -14,7 +14,6 @@ const server = http.createServer((require, response) => {
             response.end();
         }
     });
-
 });
 server.listen(8080, 'localhost', () => {
     console.log('listening for requests on port 8080');
